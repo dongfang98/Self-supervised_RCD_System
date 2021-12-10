@@ -7,3 +7,6 @@ In this project, we use greedy modularity maximization, one of the modules can u
 Here’s part of greedy modularity maximization’s principle:
 Find communities in G using greedy modularity maximization. This function uses Clauset-Newman-Moore greedy modularity maximization. This method currently supports the Graph class. Greedy modularity maximization begins with each node in its own community and joins the pair of communities that most increases modularity until no such pair exists. (Reference:https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.modularity_max.greedy_modularity_communities.html)
 
+## 2. Layer in the neural networks
+As for the input layer and hidden layers, we used the GCN layers’ update function to update each layer:
+![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/GCN_Layer.png)
