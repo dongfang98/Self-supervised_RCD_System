@@ -17,6 +17,7 @@ Because every neural network layer can be written as a non-linear function. The 
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/NeuralNetwork.png)
 
 As for the output layer, we used the Softmax layer. Softmax assigns decimal probabilities to each class in a multi-class problem. Those decimal probabilities must add up to 1.0. This additional constraint helps training converge more quickly than it otherwise would.
+
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/Softmax_Layer.png)
 
 ## 3. Gradient checking in every layers
@@ -26,6 +27,7 @@ We need to do the gradient checking during the back propogation process to ensur
 
 The equation above is basically the Euclidean distance normalized by the sum of the norm of the vectors. We use normalization in case that one of the vectors is very small.
 As a value for epsilon, we usually opt for 1e-7. Therefore, if gradient check return a value less than 1e-7, then it means that backpropagation was implemented correctly. Otherwise, there is potentially a mistake in your implementation. If the value exceeds 1e-3, then you are sure that the code is not correct.
+
 (reference:https://towardsdatascience.com/how-to-debug-a-neural-network-with-gradient-checking-41deec0357a9)
 
 ## 4. Start training
