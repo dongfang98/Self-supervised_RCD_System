@@ -1,7 +1,11 @@
 # GCN_Recommendation_System
 A movie recommendation system based on GCN (graph convolutional network). 
 ## Introduction
+![image](https://user-images.githubusercontent.com/78338843/145572770-1dd915d3-131f-42a4-aea7-428785d56162.png)
+
 ## Dataset
+![image](https://user-images.githubusercontent.com/78338843/145572820-4e0f8a1b-b07e-4127-b7ef-e506ed29fac2.png)
+
 ## Method(GCN)
 ### 1.	Generate the label for the samples
 In this project, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
@@ -45,5 +49,6 @@ Here is a video of the training process:
 https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/embed_anim.mp4
 
 ## Result & Conclusion
+![image](https://user-images.githubusercontent.com/78338843/145572885-2f733253-0047-4628-9e3d-a2294be0409d.png)
 
 This is our reference code: https://github.com/zjost/blog_code/tree/master/gcn_numpy
