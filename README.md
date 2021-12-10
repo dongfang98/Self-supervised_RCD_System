@@ -1,15 +1,18 @@
 # GCN_Recommendation_System
 ## Introduction
 A movie recommendation system based on GCN (graph convolutional network).   
-![image](https://user-images.githubusercontent.com/78338843/145572770-1dd915d3-131f-42a4-aea7-428785d56162.png)
+![image](https://user-images.githubusercontent.com/78338843/145573341-8f903e3a-c28c-4602-bed6-e24c25b98891.png)
 
 ## Dataset
 1. Filter: rating == 5  
 2. Merge: find users share the same 5-rating movies  
 Then generate graph by adding edges between users according to User-User Table  
-![image](https://user-images.githubusercontent.com/78338843/145572820-4e0f8a1b-b07e-4127-b7ef-e506ed29fac2.png)
+![image](https://user-images.githubusercontent.com/78338843/145573583-2cf010bb-5631-48dd-b6b2-17d9623ee29d.png)
 
 ## Method(GCN)
+Procedure of training and testing:
+![image](https://user-images.githubusercontent.com/78338843/145574087-c6e46904-49a8-4cb8-8a8e-8e1fa21a65d2.png)
+
 ### 1.	Generate the label for the samples
 In this project, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
 
