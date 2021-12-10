@@ -1,6 +1,6 @@
 # Self-supervised_RCD_System
 Recommendation System  
-https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/embed_anim.mp4
+
 ## 1.	Generate the label for the samples
 In this project, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
 
@@ -39,5 +39,7 @@ We should input the quantity of the nodes, the quantity of classes we expect, th
 ## 5. Final result format
 After GCN, the picture is like this. As you can see, the nodes with same color will form a cluster, the closer they are, the more similar they are. 
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/AfterGCN.PNG)
+Here is a video of the training process:  
+https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/embed_anim.mp4
 
 This is our reference code: https://github.com/zjost/blog_code/tree/master/gcn_numpy
