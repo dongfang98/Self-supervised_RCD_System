@@ -1,16 +1,18 @@
 # GCN_Recommendation_System
 ## 1. Introduction
-A movie recommendation system based on GCN (graph convolutional network).   
-![image](https://user-images.githubusercontent.com/78338843/145573341-8f903e3a-c28c-4602-bed6-e24c25b98891.png)
+This is a movie recommendation system based on GCN (graph convolutional network).  
+To have a test, run movie_rcd.py, all the data are in fold ml-latest-small.  
+The flow chart below shows what we have done:  
+![image](https://user-images.githubusercontent.com/78338843/145574755-51fed9af-df63-4c6c-b7a9-405602f1ac83.png)
 
 ## 2. Dataset
 1. Filter: rating == 5  
 2. Merge: find users share the same 5-rating movies  
 Then generate graph by adding edges between users according to User-User Table  
-![image](https://user-images.githubusercontent.com/78338843/145573583-2cf010bb-5631-48dd-b6b2-17d9623ee29d.png)
+![image](https://user-images.githubusercontent.com/78338843/145575111-4379aead-b203-424a-b4ea-243923ba01f4.png)
 
 ## 3. Method(GCN)
-Procedure of training and testing:
+Here is the procedure of training and testing:
 ![image](https://user-images.githubusercontent.com/78338843/145574087-c6e46904-49a8-4cb8-8a8e-8e1fa21a65d2.png)
 
 ### 3.1	Generate the label for the samples
@@ -55,6 +57,7 @@ Here is a video of the training process:
 https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/embed_anim.mp4
 
 ## Result & Conclusion
+As is shown in the picture below, nodes with same color are separated in the same cluster. We use the position of nodes in the graph to calculate the distance between the target user and other users. Then we select the user with the smallest distance as similar user and recommend his/her favorite movies.  
 ![image](https://user-images.githubusercontent.com/78338843/145572885-2f733253-0047-4628-9e3d-a2294be0409d.png)
 
 ## Reference
