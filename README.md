@@ -14,3 +14,4 @@ As for the input layer and hidden layers, we used the GCN layers’ update funct
 Because every neural network layer can be written as a non-linear function. The A denotes the adjacent matrix of the graph. So, we can get the l+1 layer’s neural network by l layer and the adjacency matrix. 
 (Reference: https://tkipf.github.io/graph-convolutional-networks/)
 
+![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/NeuralNetwork.png)
