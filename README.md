@@ -11,16 +11,16 @@ Then generate graph by adding edges between users according to User-User Table
 ![image](https://user-images.githubusercontent.com/78338843/145575111-4379aead-b203-424a-b4ea-243923ba01f4.png)
 
 ## 2. Method(GCN)
-Here is the procedure of training and testing:
+Procedure of training and testing:
 ![image](https://user-images.githubusercontent.com/78338843/145574087-c6e46904-49a8-4cb8-8a8e-8e1fa21a65d2.png)
 
 ### 2.1	Generate the label for the samples
-In this project, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
+Firstly, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
 
 Here’s part of greedy modularity maximization’s principle:
 Find communities in G using greedy modularity maximization. This function uses Clauset-Newman-Moore greedy modularity maximization. This method currently supports the Graph class. Greedy modularity maximization begins with each node in its own community and joins the pair of communities that most increases modularity until no such pair exists. (Reference:https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.modularity_max.greedy_modularity_communities.html)
 
-### 2.2 Layers in the neural network
+### 2.2 Layers in the GCN
 As for the input layer and hidden layers, we used the GCN layers’ update function to update each layer:
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/GCN_Layer.png)
 
