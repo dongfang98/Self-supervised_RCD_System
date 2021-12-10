@@ -1,5 +1,5 @@
-# Self-supervised_RCD_System
-Recommendation System  
+# GCN_Recommendation_System
+A movie recommendation system based on GCN (graph convolutional network). 
 
 ## 1.	Generate the label for the samples
 In this project, we use greedy modularity maximization, one of the modules can use the graph as input, and divided the nodes in graph to different clusters. We use different colors to denote different clusters, that is, if two nodes are both red, that means they are in the same cluster. This method is used to generate the true label of our training sample. 
