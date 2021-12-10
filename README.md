@@ -1,6 +1,6 @@
 # GCN_Recommendation_System
 This is a movie recommendation system based on GCN (graph convolutional network).  
-To have a test, run movie_rcd.py, all the data are in fold ml-latest-small.  
+To have a test, run movie_rcd.py, all the datasets are in fold ml-latest-small.  
 The flow chart below shows what we have done:  
 ![image](https://user-images.githubusercontent.com/78338843/145574755-51fed9af-df63-4c6c-b7a9-405602f1ac83.png)
 
