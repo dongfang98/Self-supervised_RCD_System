@@ -1,9 +1,12 @@
 # GCN_Recommendation_System
-A movie recommendation system based on GCN (graph convolutional network). 
 ## Introduction
+A movie recommendation system based on GCN (graph convolutional network).   
 ![image](https://user-images.githubusercontent.com/78338843/145572770-1dd915d3-131f-42a4-aea7-428785d56162.png)
 
 ## Dataset
+1. Filter: rating == 5  
+2. Merge: find users share the same 5-rating movies  
+Then generate graph by adding edges between users according to User-User Table  
 ![image](https://user-images.githubusercontent.com/78338843/145572820-4e0f8a1b-b07e-4127-b7ef-e506ed29fac2.png)
 
 ## Method(GCN)
@@ -43,8 +46,8 @@ We should input the quantity of the nodes, the quantity of classes we expect, th
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/Training.PNG)
 
 ### 5. Final result format
-After GCN, the picture is like this. As you can see, the nodes with same color will form a cluster, the closer they are, the more similar they are. 
-![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/AfterGCN.PNG)
+After GCN, the picture is like this. As you can see, the nodes with same color will form a cluster, the closer they are, the more similar they are.  
+![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/AfterGCN.PNG)  
 Here is a video of the training process:  
 https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/embed_anim.mp4
 
