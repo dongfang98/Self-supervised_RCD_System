@@ -31,6 +31,7 @@ As a value for epsilon, we usually opt for 1e-7. Therefore, if gradient check re
 ## 4. Start training
 
 We should input the quantity of the nodes, the quantity of classes we expect, the quantity of hidden layer, the size of the hidden layers and the activation function. In this project, we use the sigmoid function as our activation function. We used the gradient descent in back propogation to adjust the W. Here's our training loss picture:
+
 ![image](https://github.com/dongfang98/Self-supervised_RCD_System/blob/main/Picture/Training.PNG)
 
 ## 5. Final result format
